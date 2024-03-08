@@ -65,8 +65,8 @@ def sequences_to_dicts(sequences):
 
     # Create dictionaries so that we can go from word to index and back
     # If a word is not in our vocabulary, we assign it to token 'UNK'
-    word_to_idx = defaultdict(lambda: num_words)
-    idx_to_word = defaultdict(lambda: 'UNK')
+    word_to_idx = {}  #defaultdict(lambda: num_words)
+    idx_to_word = {}  #defaultdict(lambda: 'UNK')
 
     # Fill dictionaries
     for idx, word in enumerate(unique_words):
